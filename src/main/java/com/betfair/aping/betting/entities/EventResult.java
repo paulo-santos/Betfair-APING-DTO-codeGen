@@ -18,36 +18,28 @@ public class EventResult {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * Event
     */
-
     public Event getEvent(){
         return event;
     }
-     
-    /**
+     /**
     * Event
     */
-
     public void setEvent(Event event){
         this.event = event;
     }
      
-     
-    /**
+     /**
     * Count of markets associated with this event
     */
-
     public Integer getMarketCount(){
         return marketCount;
     }
-     
-    /**
+     /**
     * Count of markets associated with this event
     */
-
     public void setMarketCount(Integer marketCount){
         this.marketCount = marketCount;
     }

@@ -24,19 +24,15 @@ public class ReplaceExecutionReport {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * Echo of the customerRef if passed.
     */
-
     public String getCustomerRef(){
         return customerRef;
     }
-     
-    /**
+     /**
     * Echo of the customerRef if passed.
     */
-
     public void setCustomerRef(String customerRef){
         this.customerRef = customerRef;
     }
@@ -59,19 +55,15 @@ public class ReplaceExecutionReport {
         this.errorCode = errorCode;
     }
      
-     
-    /**
+     /**
     * Echo of marketId passed
     */
-
     public String getMarketId(){
         return marketId;
     }
-     
-    /**
+     /**
     * Echo of marketId passed
     */
-
     public void setMarketId(String marketId){
         this.marketId = marketId;
     }

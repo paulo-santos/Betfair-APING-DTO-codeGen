@@ -5,19 +5,19 @@ import javax.annotation.Generated;
 @Generated("pt.paulosantos.betfair.aping.codegen")
 public enum MarketStatus {
     /**
-    *Inactive Market
+    *The market has been created but isn't yet available.
     */
     INACTIVE,
     /**
-    *Open Market
+    *The market is open for betting.
     */
     OPEN,
     /**
-    *Suspended Market
+    *The market is suspended and not available for betting.
     */
     SUSPENDED,
     /**
-    *Closed Market
+    *The market has been settled and is no longer available for betting.
     */
     CLOSED
 }

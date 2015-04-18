@@ -17,10 +17,6 @@ public enum GroupBy {
     */
     MARKET,
     /**
-    *A roll up of settled P&L and the number of bet orders, on a specified runner within a specified market
-    */
-    RUNNER,
-    /**
     *An averaged roll up of settled P&L, and number of bets, on the specified side of a specified selection within a specified market, that are either settled or voided
     */
     SIDE,

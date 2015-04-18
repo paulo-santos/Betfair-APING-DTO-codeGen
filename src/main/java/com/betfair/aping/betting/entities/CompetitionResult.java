@@ -22,53 +22,41 @@ public class CompetitionResult {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * Competition
     */
-
     public Competition getCompetition(){
         return competition;
     }
-     
-    /**
+     /**
     * Competition
     */
-
     public void setCompetition(Competition competition){
         this.competition = competition;
     }
      
-     
-    /**
+     /**
     * Count of markets associated with this competition
     */
-
     public Integer getMarketCount(){
         return marketCount;
     }
-     
-    /**
+     /**
     * Count of markets associated with this competition
     */
-
     public void setMarketCount(Integer marketCount){
         this.marketCount = marketCount;
     }
      
-     
-    /**
+     /**
     * Region in which this competition is happening
     */
-
     public String getCompetitionRegion(){
         return competitionRegion;
     }
-     
-    /**
+     /**
     * Region in which this competition is happening
     */
-
     public void setCompetitionRegion(String competitionRegion){
         this.competitionRegion = competitionRegion;
     }

@@ -13,7 +13,7 @@ public class MarketFilter {
     */
     private String textQuery;
     /**
-    * Restrict markets by the Exchange where the market operates
+    * Restrict markets by the Exchange where the market operates. Not currently in use, requests for Australian markets should be sent to the Aus Exchange endpoint.
     */
     private Set<String> exchangeIds;
     /**
@@ -73,257 +73,197 @@ public class MarketFilter {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * Restrict markets by any text associated with the market such as the Name, Event, Competition, etc. You can include a wildcard (*) character as long as it is not the first character.
     */
-
     public String getTextQuery(){
         return textQuery;
     }
-     
-    /**
+     /**
     * Restrict markets by any text associated with the market such as the Name, Event, Competition, etc. You can include a wildcard (*) character as long as it is not the first character.
     */
-
     public void setTextQuery(String textQuery){
         this.textQuery = textQuery;
     }
      
-     
-    /**
-    * Restrict markets by the Exchange where the market operates
+     /**
+    * Restrict markets by the Exchange where the market operates. Not currently in use, requests for Australian markets should be sent to the Aus Exchange endpoint.
     */
-
     public Set<String> getExchangeIds(){
         return exchangeIds;
     }
-     
-    /**
-    * Restrict markets by the Exchange where the market operates
+     /**
+    * Restrict markets by the Exchange where the market operates. Not currently in use, requests for Australian markets should be sent to the Aus Exchange endpoint.
     */
-
     public void setExchangeIds(Set<String> exchangeIds){
         this.exchangeIds = exchangeIds;
     }
      
-     
-    /**
+     /**
     * Restrict markets by event type associated with the market. (i.e., Football, Hockey, etc)
     */
-
     public Set<String> getEventTypeIds(){
         return eventTypeIds;
     }
-     
-    /**
+     /**
     * Restrict markets by event type associated with the market. (i.e., Football, Hockey, etc)
     */
-
     public void setEventTypeIds(Set<String> eventTypeIds){
         this.eventTypeIds = eventTypeIds;
     }
      
-     
-    /**
+     /**
     * Restrict markets by the event id associated with the market.
     */
-
     public Set<String> getEventIds(){
         return eventIds;
     }
-     
-    /**
+     /**
     * Restrict markets by the event id associated with the market.
     */
-
     public void setEventIds(Set<String> eventIds){
         this.eventIds = eventIds;
     }
      
-     
-    /**
+     /**
     * Restrict markets by the competitions associated with the market.
     */
-
     public Set<String> getCompetitionIds(){
         return competitionIds;
     }
-     
-    /**
+     /**
     * Restrict markets by the competitions associated with the market.
     */
-
     public void setCompetitionIds(Set<String> competitionIds){
         this.competitionIds = competitionIds;
     }
      
-     
-    /**
+     /**
     * Restrict markets by the market id associated with the market.
     */
-
     public Set<String> getMarketIds(){
         return marketIds;
     }
-     
-    /**
+     /**
     * Restrict markets by the market id associated with the market.
     */
-
     public void setMarketIds(Set<String> marketIds){
         this.marketIds = marketIds;
     }
      
-     
-    /**
+     /**
     * Restrict markets by the venue associated with the market. Currently only Horse Racing markets have venues.
     */
-
     public Set<String> getVenues(){
         return venues;
     }
-     
-    /**
+     /**
     * Restrict markets by the venue associated with the market. Currently only Horse Racing markets have venues.
     */
-
     public void setVenues(Set<String> venues){
         this.venues = venues;
     }
      
-     
-    /**
+     /**
     * Restrict to bsp markets only, if True or non-bsp markets if False. If not specified then returns both BSP and non-BSP markets
     */
-
     public Boolean getBspOnly(){
         return bspOnly;
     }
-     
-    /**
+     /**
     * Restrict to bsp markets only, if True or non-bsp markets if False. If not specified then returns both BSP and non-BSP markets
     */
-
     public void setBspOnly(Boolean bspOnly){
         this.bspOnly = bspOnly;
     }
      
-     
-    /**
+     /**
     * Restrict to markets that will turn in play if True or will not turn in play if false. If not specified, returns both.
     */
-
     public Boolean getTurnInPlayEnabled(){
         return turnInPlayEnabled;
     }
-     
-    /**
+     /**
     * Restrict to markets that will turn in play if True or will not turn in play if false. If not specified, returns both.
     */
-
     public void setTurnInPlayEnabled(Boolean turnInPlayEnabled){
         this.turnInPlayEnabled = turnInPlayEnabled;
     }
      
-     
-    /**
+     /**
     * Restrict to markets that are currently in play if True or are not currently in play if false. If not specified, returns both.
     */
-
     public Boolean getInPlayOnly(){
         return inPlayOnly;
     }
-     
-    /**
+     /**
     * Restrict to markets that are currently in play if True or are not currently in play if false. If not specified, returns both.
     */
-
     public void setInPlayOnly(Boolean inPlayOnly){
         this.inPlayOnly = inPlayOnly;
     }
      
-     
-    /**
+     /**
     * Restrict to markets that match the betting type of the market (i.e. Odds, Asian Handicap Singles, or Asian Handicap Doubles
     */
-
     public Set<MarketBettingType> getMarketBettingTypes(){
         return marketBettingTypes;
     }
-     
-    /**
+     /**
     * Restrict to markets that match the betting type of the market (i.e. Odds, Asian Handicap Singles, or Asian Handicap Doubles
     */
-
     public void setMarketBettingTypes(Set<MarketBettingType> marketBettingTypes){
         this.marketBettingTypes = marketBettingTypes;
     }
      
-     
-    /**
+     /**
     * Restrict to markets that are in the specified country or countries
     */
-
     public Set<String> getMarketCountries(){
         return marketCountries;
     }
-     
-    /**
+     /**
     * Restrict to markets that are in the specified country or countries
     */
-
     public void setMarketCountries(Set<String> marketCountries){
         this.marketCountries = marketCountries;
     }
      
-     
-    /**
+     /**
     * Restrict to markets that match the type of the market (i.e., MATCH_ODDS, HALF_TIME_SCORE). You should use this instead of relying on the market name as the market type codes are the same in all locales
     */
-
     public Set<String> getMarketTypeCodes(){
         return marketTypeCodes;
     }
-     
-    /**
+     /**
     * Restrict to markets that match the type of the market (i.e., MATCH_ODDS, HALF_TIME_SCORE). You should use this instead of relying on the market name as the market type codes are the same in all locales
     */
-
     public void setMarketTypeCodes(Set<String> marketTypeCodes){
         this.marketTypeCodes = marketTypeCodes;
     }
      
-     
-    /**
+     /**
     * Restrict to markets with a market start time before or after the specified date
     */
-
     public TimeRange getMarketStartTime(){
         return marketStartTime;
     }
-     
-    /**
+     /**
     * Restrict to markets with a market start time before or after the specified date
     */
-
     public void setMarketStartTime(TimeRange marketStartTime){
         this.marketStartTime = marketStartTime;
     }
      
-     
-    /**
+     /**
     * Restrict to markets that I have one or more orders in these status.
     */
-
     public Set<OrderStatus> getWithOrders(){
         return withOrders;
     }
-     
-    /**
+     /**
     * Restrict to markets that I have one or more orders in these status.
     */
-
     public void setWithOrders(Set<OrderStatus> withOrders){
         this.withOrders = withOrders;
     }

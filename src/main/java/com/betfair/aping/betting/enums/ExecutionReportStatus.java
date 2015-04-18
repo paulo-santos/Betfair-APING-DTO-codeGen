@@ -13,7 +13,7 @@ public enum ExecutionReportStatus {
     */
     FAILURE,
     /**
-    *The order itself has been accepted, but at least one (possibly all) actions have generated errors
+    *The order itself has been accepted, but at least one (possibly all) actions have generated errors. This error only occurs for replaceOrders, cancelOrders and updateOrders operations. The placeOrders operation will not return PROCESSED_WITH_ERRORS status as it is an atomic operation.
     */
     PROCESSED_WITH_ERRORS,
     /**

@@ -20,40 +20,32 @@ public class MarketRates {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * marketBaseRate
     */
-
     public Double getMarketBaseRate(){
         return marketBaseRate;
     }
-     
-    /**
+     /**
     * REQUIRED
     * marketBaseRate
     */
-
     public void setMarketBaseRate(Double marketBaseRate){
         this.marketBaseRate = marketBaseRate;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * discountAllowed
     */
-
     public Boolean getDiscountAllowed(){
         return discountAllowed;
     }
-     
-    /**
+     /**
     * REQUIRED
     * discountAllowed
     */
-
     public void setDiscountAllowed(Boolean discountAllowed){
         this.discountAllowed = discountAllowed;
     }

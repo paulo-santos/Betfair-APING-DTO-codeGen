@@ -27,7 +27,7 @@ public class RunnerCatalog {
     */
     private Integer sortPriority;
     /**
-    * Metadata associated with the runner.Â  For a description of this data for Horse Racing, please see Runner Metadata Description
+    * Metadata associated with the runner.  For a description of this data for Horse Racing, please see Runner Metadata Description
     */
     private Map<String,String> metadata;
 
@@ -35,95 +35,75 @@ public class RunnerCatalog {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * The unique id for the selection.
     */
-
     public Long getSelectionId(){
         return selectionId;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The unique id for the selection.
     */
-
     public void setSelectionId(Long selectionId){
         this.selectionId = selectionId;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The name of the runner
     */
-
     public String getRunnerName(){
         return runnerName;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The name of the runner
     */
-
     public void setRunnerName(String runnerName){
         this.runnerName = runnerName;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The handicap
     */
-
     public Double getHandicap(){
         return handicap;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The handicap
     */
-
     public void setHandicap(Double handicap){
         this.handicap = handicap;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The sort priority of this runner
     */
-
     public Integer getSortPriority(){
         return sortPriority;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The sort priority of this runner
     */
-
     public void setSortPriority(Integer sortPriority){
         this.sortPriority = sortPriority;
     }
      
-     
-    /**
-    * Metadata associated with the runner.Â  For a description of this data for Horse Racing, please see Runner Metadata Description
+     /**
+    * Metadata associated with the runner.  For a description of this data for Horse Racing, please see Runner Metadata Description
     */
-
     public Map<String,String> getMetadata(){
         return metadata;
     }
-     
-    /**
-    * Metadata associated with the runner.Â  For a description of this data for Horse Racing, please see Runner Metadata Description
+     /**
+    * Metadata associated with the runner.  For a description of this data for Horse Racing, please see Runner Metadata Description
     */
-
     public void setMetadata(Map<String,String> metadata){
         this.metadata = metadata;
     }

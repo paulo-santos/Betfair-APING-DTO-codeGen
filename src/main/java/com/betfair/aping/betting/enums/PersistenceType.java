@@ -5,11 +5,11 @@ import javax.annotation.Generated;
 @Generated("pt.paulosantos.betfair.aping.codegen")
 public enum PersistenceType {
     /**
-    *Lapse the order at turn-in-play
+    *Lapse the order when the market is turned in-play
     */
     LAPSE,
     /**
-    *Persist the order to in-play
+    *Persist the order to in-play. The bet will be place automatically into the in-play market at the start of the event.
     */
     PERSIST,
     /**

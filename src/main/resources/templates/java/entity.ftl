@@ -24,13 +24,10 @@ public class ${entity.entityName} {
     //# GETTERS AND SETTERS #
     //#######################
     <#list entity.properties as property>
-    <#assign description> <#if property.description?? && property.description?length &gt; 1 >
-    /**<#if property.required>
+    <#assign description> <#if property.description?? && property.description?length &gt; 1 >/**<#if property.required>
     * REQUIRED</#if>
     * ${property.description}
-    */
-    </#if>
-    </#assign>
+    */</#if></#assign>
     ${description}
     public ${property.fieldType?cap_first} get${property.fieldName?cap_first}(){
         return ${property.fieldName};

@@ -21,40 +21,32 @@ public class UpdateInstruction {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * Unique identifier for the bet
     */
-
     public String getBetId(){
         return betId;
     }
-     
-    /**
+     /**
     * REQUIRED
     * Unique identifier for the bet
     */
-
     public void setBetId(String betId){
         this.betId = betId;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The new persistence type to update this bet to
     */
-
     public PersistenceType getNewPersistenceType(){
         return newPersistenceType;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The new persistence type to update this bet to
     */
-
     public void setNewPersistenceType(PersistenceType newPersistenceType){
         this.newPersistenceType = newPersistenceType;
     }

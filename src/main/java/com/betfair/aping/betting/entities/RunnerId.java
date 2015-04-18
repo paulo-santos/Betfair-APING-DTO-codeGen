@@ -24,57 +24,45 @@ public class RunnerId {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * The id of the market bet on
     */
-
     public String getMarketId(){
         return marketId;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The id of the market bet on
     */
-
     public void setMarketId(String marketId){
         this.marketId = marketId;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The id of the selection bet on
     */
-
     public Long getSelectionId(){
         return selectionId;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The id of the selection bet on
     */
-
     public void setSelectionId(Long selectionId){
         this.selectionId = selectionId;
     }
      
-     
-    /**
+     /**
     * The handicap associated with the runner in case of asian handicap markets, null otherwise.
     */
-
     public Double getHandicap(){
         return handicap;
     }
-     
-    /**
+     /**
     * The handicap associated with the runner in case of asian handicap markets, null otherwise.
     */
-
     public void setHandicap(Double handicap){
         this.handicap = handicap;
     }

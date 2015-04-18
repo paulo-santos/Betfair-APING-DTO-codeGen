@@ -58,7 +58,7 @@ public class MarketDescription {
     private Double marketBaseRate;
     /**
     * REQUIRED
-    * Indicates whether or not the user's discount rate is taken into account on this market. If â€˜falseâ€™ all users will be charged the same commission rate, regardless of discount rate.
+    * Indicates whether or not the user's discount rate is taken into account on this market. If ‘false’ all users will be charged the same commission rate, regardless of discount rate.
     */
     private Boolean discountAllowed;
     /**
@@ -79,243 +79,191 @@ public class MarketDescription {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * If 'true' the market supports 'Keep' bets if the market is to be turned in-play
     */
-
     public Boolean getPersistenceEnabled(){
         return persistenceEnabled;
     }
-     
-    /**
+     /**
     * REQUIRED
     * If 'true' the market supports 'Keep' bets if the market is to be turned in-play
     */
-
     public void setPersistenceEnabled(Boolean persistenceEnabled){
         this.persistenceEnabled = persistenceEnabled;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * If 'true' the market supports Betfair SP betting
     */
-
     public Boolean getBspMarket(){
         return bspMarket;
     }
-     
-    /**
+     /**
     * REQUIRED
     * If 'true' the market supports Betfair SP betting
     */
-
     public void setBspMarket(Boolean bspMarket){
         this.bspMarket = bspMarket;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The market start time
     */
-
     public Date getMarketTime(){
         return marketTime;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The market start time
     */
-
     public void setMarketTime(Date marketTime){
         this.marketTime = marketTime;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The market suspend time
     */
-
     public Date getSuspendTime(){
         return suspendTime;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The market suspend time
     */
-
     public void setSuspendTime(Date suspendTime){
         this.suspendTime = suspendTime;
     }
      
-     
-    /**
+     /**
     * settled time
     */
-
     public Date getSettleTime(){
         return settleTime;
     }
-     
-    /**
+     /**
     * settled time
     */
-
     public void setSettleTime(Date settleTime){
         this.settleTime = settleTime;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * See MarketBettingType
     */
-
     public MarketBettingType getBettingType(){
         return bettingType;
     }
-     
-    /**
+     /**
     * REQUIRED
     * See MarketBettingType
     */
-
     public void setBettingType(MarketBettingType bettingType){
         this.bettingType = bettingType;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * If 'true' the market is set to turn in-play
     */
-
     public Boolean getTurnInPlayEnabled(){
         return turnInPlayEnabled;
     }
-     
-    /**
+     /**
     * REQUIRED
     * If 'true' the market is set to turn in-play
     */
-
     public void setTurnInPlayEnabled(Boolean turnInPlayEnabled){
         this.turnInPlayEnabled = turnInPlayEnabled;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * Market base type
     */
-
     public String getMarketType(){
         return marketType;
     }
-     
-    /**
+     /**
     * REQUIRED
     * Market base type
     */
-
     public void setMarketType(String marketType){
         this.marketType = marketType;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The market regulator
     */
-
     public String getRegulator(){
         return regulator;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The market regulator
     */
-
     public void setRegulator(String regulator){
         this.regulator = regulator;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The commission rate applicable to the market
     */
-
     public Double getMarketBaseRate(){
         return marketBaseRate;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The commission rate applicable to the market
     */
-
     public void setMarketBaseRate(Double marketBaseRate){
         this.marketBaseRate = marketBaseRate;
     }
      
-     
-    /**
+     /**
     * REQUIRED
-    * Indicates whether or not the user's discount rate is taken into account on this market. If â€˜falseâ€™ all users will be charged the same commission rate, regardless of discount rate.
+    * Indicates whether or not the user's discount rate is taken into account on this market. If ‘false’ all users will be charged the same commission rate, regardless of discount rate.
     */
-
     public Boolean getDiscountAllowed(){
         return discountAllowed;
     }
-     
-    /**
+     /**
     * REQUIRED
-    * Indicates whether or not the user's discount rate is taken into account on this market. If â€˜falseâ€™ all users will be charged the same commission rate, regardless of discount rate.
+    * Indicates whether or not the user's discount rate is taken into account on this market. If ‘false’ all users will be charged the same commission rate, regardless of discount rate.
     */
-
     public void setDiscountAllowed(Boolean discountAllowed){
         this.discountAllowed = discountAllowed;
     }
      
-     
-    /**
+     /**
     * The wallet to which the market belongs (UK/AUS)
     */
-
     public String getWallet(){
         return wallet;
     }
-     
-    /**
+     /**
     * The wallet to which the market belongs (UK/AUS)
     */
-
     public void setWallet(String wallet){
         this.wallet = wallet;
     }
      
-     
-    /**
+     /**
     * The market rules.
     */
-
     public String getRules(){
         return rules;
     }
-     
-    /**
+     /**
     * The market rules.
     */
-
     public void setRules(String rules){
         this.rules = rules;
     }
@@ -329,19 +277,15 @@ public class MarketDescription {
         this.rulesHasDate = rulesHasDate;
     }
      
-     
-    /**
+     /**
     * Any additional information regarding the market
     */
-
     public String getClarifications(){
         return clarifications;
     }
-     
-    /**
+     /**
     * Any additional information regarding the market
     */
-
     public void setClarifications(String clarifications){
         this.clarifications = clarifications;
     }

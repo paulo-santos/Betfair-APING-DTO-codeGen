@@ -37,11 +37,11 @@ public enum ExecutionReportErrorCode {
     */
     MARKET_SUSPENDED,
     /**
-    *Market is not open for betting, either inactive, suspended or closed
+    *Market is not open for betting. It is either not yet active, suspended or closed awaiting settlement.
     */
     MARKET_NOT_OPEN_FOR_BETTING,
     /**
-    *duplicate customer referece data submitted
+    *Duplicate customer reference data submitted - Please note: There is a time window associated with the de-duplication of duplicate submissions which is 60 second
     */
     DUPLICATE_TRANSACTION,
     /**
@@ -53,7 +53,7 @@ public enum ExecutionReportErrorCode {
     */
     INVALID_MARKET_ID,
     /**
-    *Business rules do not allow order to be placed
+    *Business rules do not allow order to be placed. You are either attempting to place the order using a Delayed Application Key or from a restricted jurisdiction (i.e. USA)
     */
     PERMISSION_DENIED,
     /**
@@ -69,7 +69,7 @@ public enum ExecutionReportErrorCode {
     */
     SERVICE_UNAVAILABLE,
     /**
-    *The regulator rejected the order
+    *The regulator rejected the order. On the Italian Exchange this error will occur if more than 50 bets are sent in a single placeOrders request.
     */
     REJECTED_BY_REGULATOR
 }

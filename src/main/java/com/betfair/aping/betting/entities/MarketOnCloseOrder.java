@@ -15,21 +15,17 @@ public class MarketOnCloseOrder {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * The size of the bet.
     */
-
     public Double getLiability(){
         return liability;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The size of the bet.
     */
-
     public void setLiability(Double liability){
         this.liability = liability;
     }

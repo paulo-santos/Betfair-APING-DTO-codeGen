@@ -28,55 +28,43 @@ public class CancelInstructionReport {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
     * whether the command succeeded or failed
     */
-
     public InstructionReportStatus getStatus(){
         return status;
     }
-     
-    /**
+     /**
     * REQUIRED
     * whether the command succeeded or failed
     */
-
     public void setStatus(InstructionReportStatus status){
         this.status = status;
     }
      
-     
-    /**
+     /**
     * cause of failure, or null if command succeeds
     */
-
     public InstructionReportErrorCode getErrorCode(){
         return errorCode;
     }
-     
-    /**
+     /**
     * cause of failure, or null if command succeeds
     */
-
     public void setErrorCode(InstructionReportErrorCode errorCode){
         this.errorCode = errorCode;
     }
      
-     
-    /**
+     /**
     * The instruction that was requested
     */
-
     public CancelInstruction getInstruction(){
         return instruction;
     }
-     
-    /**
+     /**
     * The instruction that was requested
     */
-
     public void setInstruction(CancelInstruction instruction){
         this.instruction = instruction;
     }

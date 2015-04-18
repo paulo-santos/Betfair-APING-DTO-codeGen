@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 public class LimitOrder {
     /**
     * REQUIRED
-    * The size of the bet.
+    * The size of the bet. Please note: For market type EACH_WAY. The total stake = size x 2
     */
     private Double size;
     /**
@@ -26,59 +26,47 @@ public class LimitOrder {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * REQUIRED
-    * The size of the bet.
+    * The size of the bet. Please note: For market type EACH_WAY. The total stake = size x 2
     */
-
     public Double getSize(){
         return size;
     }
-     
-    /**
+     /**
     * REQUIRED
-    * The size of the bet.
+    * The size of the bet. Please note: For market type EACH_WAY. The total stake = size x 2
     */
-
     public void setSize(Double size){
         this.size = size;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * The limit price
     */
-
     public Double getPrice(){
         return price;
     }
-     
-    /**
+     /**
     * REQUIRED
     * The limit price
     */
-
     public void setPrice(Double price){
         this.price = price;
     }
      
-     
-    /**
+     /**
     * REQUIRED
     * What to do with the order at turn-in-play
     */
-
     public PersistenceType getPersistenceType(){
         return persistenceType;
     }
-     
-    /**
+     /**
     * REQUIRED
     * What to do with the order at turn-in-play
     */
-
     public void setPersistenceType(PersistenceType persistenceType){
         this.persistenceType = persistenceType;
     }

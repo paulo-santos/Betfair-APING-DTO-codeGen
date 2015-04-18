@@ -18,36 +18,28 @@ public class MarketTypeResult {
     //#######################
     //# GETTERS AND SETTERS #
     //#######################
-     
-    /**
+     /**
     * Market Type
     */
-
     public String getMarketType(){
         return marketType;
     }
-     
-    /**
+     /**
     * Market Type
     */
-
     public void setMarketType(String marketType){
         this.marketType = marketType;
     }
      
-     
-    /**
+     /**
     * Count of markets associated with this marketType
     */
-
     public Integer getMarketCount(){
         return marketCount;
     }
-     
-    /**
+     /**
     * Count of markets associated with this marketType
     */
-
     public void setMarketCount(Integer marketCount){
         this.marketCount = marketCount;
     }
